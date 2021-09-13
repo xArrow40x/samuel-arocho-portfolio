@@ -3,6 +3,7 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import { Link } from "gatsby"
 
 class Main extends React.Component {
   render() {
@@ -56,44 +57,15 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Projects</h2>
           <span className="image main">
             <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
           </span>
           <p>
             Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
@@ -104,6 +76,85 @@ class Main extends React.Component {
             Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
             amet.
           </p>
+          {close}
+        </article>
+
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Work</h2>
+          <h4 style={{
+            margin: '0'
+          }}><Link to='https://www.wayfair.com/'>Wayfair, LLC</Link></h4>
+                <text>Software Analyst/Render Support Engineer</text>
+                <br/>
+                <text>July 2020-July 2021</text>
+                <br/>
+                <br/>
+                <p>
+                •	Responded to critical issues and performed investigation to resolve them and/or assign them to appropriate engineer/artists <br/>
+                •	Maintained prioritization of render jobs on the render farm (Deadline) and Maxscript jobs in the 3D application queue (OpenCue) <br/>
+                •	Troubleshot and monitored render farm and 3D application farm health <br/>
+                •	Created Grafana graphs for more accurate monitoring and reporting or render farm health status <br/>
+                •	Coordinated daily statistical updates of render farm data for stakeholder monitoring <br/>
+                •	Investigated an average of 50+ 3D scene files for errors daily <br/>
+                •	Scripted (Maxscript and Python3) code to automate daily tasks <br/>
+                </p>
+          <br/>
+          <h4 style={{
+            margin: '0'
+          }}><Link to='https://apprenticareers.org/'>Apprenti</Link>/<Link to='https://launchacademy.com/'>Launch Academy</Link></h4>
+                <text>Software Development Apprentice</text>
+                <br/>
+                <text>Jan 2020-July 2021</text>
+                <br/>
+                <br/>
+                <p>
+                •	Federally Registered Apprenticeship Program approved by the Department of Labor <br/>
+                •	Maintained prioritization of render jobs on the render farm (Deadline) and Maxscript jobs in the 3D application queue (OpenCue) <br/>
+                •	Troubleshot and monitored render farm and 3D application farm health <br/>
+                •	Created Grafana graphs for more accurate monitoring and reporting or render farm health status <br/>
+                •	Coordinated daily statistical updates of render farm data for stakeholder monitoring <br/>
+                •	Investigated an average of 50+ 3D scene files for errors daily <br/>
+                •	Scripted (Maxscript and Python3) code to automate daily tasks <br/>
+                </p>
+          <br/>
+          <h4 style={{
+            margin: '0'
+          }}><Link to='https://bostonpic.org/'>The Boston Private Industry Council, Inc</Link></h4>
+                <text>Postsecondary Transitional Coach</text>
+                <br/>
+                <text>May 2016-June 2019</text>
+                <br/>
+                <br/>
+                <p>
+                •	Provided one-on-one coaching to improve college retention and career exploration <br/>
+                •	Assisted in the development of life skills, leadership skills, and organizational skills in students to navigate college <br/>
+                •	Connected students with available services regarding FAFSA and scholarships, college admission, course selection and advising, academic tutoring, resume and interview preparation, and more<br/>
+                •	Collaborated with PIC Staff to deliver annual new student orientation and summer series of college preparation and team building workshops <br/>
+                •	Created and maintained working relationships with educational institutions where cohort(s) of students attend<br/>
+                •	Tracked student contact information, academic progress, and attendance at group and individual meetings in order to ensure delivery of services and develop reports via Salesforce<br/>
+                </p>
+          <br/>
+          <h2>Education</h2>
+          <h4 style={{
+            margin: '0'
+          }}><Link to='https://launchacademy.com/'>Launch Academy</Link></h4>
+                <text>Software Developer Track</text>
+                <p>
+                •	Certificate of completion for Full Stack Software Developer <br/>
+                </p>
+          <h4 style={{
+            margin: '0'
+          }}><Link to='https://www.northeastern.edu/'>Northeastern University</Link></h4>
+                <text>B.S. Counseling Psychology</text>
+                <p>
+                •	Minor: Latino/a American and Caribbean Studies<br/>
+                </p>
           {close}
         </article>
 
