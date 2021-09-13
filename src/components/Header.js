@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { FaReact } from "@react-icons/all-files/fa/FaReact"
 import { FaJava } from "@react-icons/all-files/fa/FaJava"
+import { FaMapPin } from "@react-icons/all-files/fa/FaMapPin"
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -13,9 +14,9 @@ const Header = props => (
         <h1>Samuel Arocho</h1>
         <p>
           A Software Developer{' '}
-          with experience in <FaReact/>React, <FaJava/>Java, and more!
+          with experience in <FaReact/> React, <FaJava/> Java, and more!
           <br />
-          
+          <FaMapPin/>Boston, Ma
         </p>
       </div>
     </div>
@@ -33,19 +34,19 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('projects')
             }}
           >
-            Work
+            Projects
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('work')
             }}
           >
-            About
+            Work
           </button>
         </li>
         <li>
