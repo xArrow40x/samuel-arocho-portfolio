@@ -252,6 +252,7 @@ class Main extends React.Component {
           <p>
             Coming Soon! In the meantime, check out my <a href="https://www.instagram.com/ninesevenphotos/?hl=en">Instagram</a> for my photos!
           </p>
+          {contactIcons}
           {close}
         </article>
 
