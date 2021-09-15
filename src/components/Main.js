@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/greenamonia.jpg'
+import pic02 from '../images/Greenamonia.jpg'
 import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/portfolio.jpg'
 
@@ -13,8 +13,10 @@ import { FaDatabase } from '@react-icons/all-files/fa/FaDatabase'
 import { FaPython } from '@react-icons/all-files/fa/FaPython'
 import { FaNodeJs } from '@react-icons/all-files/fa/FaNodeJs'
 import { FaHtml5 } from '@react-icons/all-files/fa/FaHtml5'
-// import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
-// import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
+import { SiPostgresql } from "@react-icons/all-files/si/SiPostgresql"
+import { SiSpring } from "@react-icons/all-files/si/SiSpring"
+import { SiGrafana } from "@react-icons/all-files/si/SiGrafana"
+import { SiDatadog } from "@react-icons/all-files/si/SiDatadog"
 
 class Main extends React.Component {
   render() {
@@ -72,8 +74,7 @@ class Main extends React.Component {
           <p>
             Hey, Samuel here. I'm a Boston native through and through. Went to Northeastern
             University and finished with a degree in Counseling Psychology. I believed I would
-            become a therapist, but here I am pursuing a career in TECH. I believe the skills I've
-            learned through years working in education and non-profits will allow me to... 
+            become a therapist, but here I am pursuing a career in TECH.
           </p>
           <p>
             I've spent the vast majority of the past 3 years learning and honing my skills/interests
@@ -100,6 +101,10 @@ class Main extends React.Component {
             <li><FaNodeJs/></li>
             <li><FaJava/></li>
             <li><FaHtml5/></li>
+            <li><SiPostgresql/></li>
+            <li><SiSpring/></li>
+            <li><SiGrafana/></li>
+            <li><SiDatadog/></li>
           </ul>
           {contactIcons}
           {close}
@@ -159,7 +164,6 @@ class Main extends React.Component {
           <p>
             This is a simple storefront created almost exclusively in React with a simple Express.js backend. This site is NOT currently LIVE.
           </p>
-          
           {contactIcons}
           {close}
         </article>
