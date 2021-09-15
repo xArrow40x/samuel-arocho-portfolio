@@ -1,19 +1,17 @@
-# gatsby-starter-dimension
+# Samuel-Arocho-Portfolio
 
-**This is a starter for Gatsby.js V2.**
+**Volume 1**
 
-**The older V1 version of this starter can be found on the v1 branch:**
-
-Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+This was created using Gatsby.js V2 for it's simplicity and mostly static nature.
 
 ## Preview
 
-https://gatsby-dimension.surge.sh/
+in progress...
 
 ## Installation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Install this (assuming Gatsby is installed):
 <br/>
-`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`
+`git clone https://github.com/xArrow40x/samuel-arocho-portfolio.git`
 
 Run `gatsby develop` in the terminal to start the dev site.
