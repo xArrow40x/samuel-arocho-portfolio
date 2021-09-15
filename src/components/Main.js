@@ -164,7 +164,6 @@ class Main extends React.Component {
           <p>
             This is a simple storefront created almost exclusively in React with a simple Express.js backend. This site is NOT currently LIVE.
           </p>
-          
           {contactIcons}
           {close}
         </article>
