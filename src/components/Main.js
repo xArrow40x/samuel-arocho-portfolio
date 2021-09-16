@@ -13,10 +13,15 @@ import { FaDatabase } from '@react-icons/all-files/fa/FaDatabase'
 import { FaPython } from '@react-icons/all-files/fa/FaPython'
 import { FaNodeJs } from '@react-icons/all-files/fa/FaNodeJs'
 import { FaHtml5 } from '@react-icons/all-files/fa/FaHtml5'
+import { FaYarn } from '@react-icons/all-files/fa/FaYarn'
 import { SiPostgresql } from "@react-icons/all-files/si/SiPostgresql"
 import { SiSpring } from "@react-icons/all-files/si/SiSpring"
 import { SiGrafana } from "@react-icons/all-files/si/SiGrafana"
 import { SiDatadog } from "@react-icons/all-files/si/SiDatadog"
+import { SiGatsby } from "@react-icons/all-files/si/SiGatsby"
+import { SiHeroku } from "@react-icons/all-files/si/SiHeroku"
+import { SiIntellijidea } from "@react-icons/all-files/si/SiIntellijidea"
+
 
 class Main extends React.Component {
   render() {
@@ -105,6 +110,10 @@ class Main extends React.Component {
             <li><SiSpring/></li>
             <li><SiGrafana/></li>
             <li><SiDatadog/></li>
+            <li><SiGatsby/></li>
+            <li><SiHeroku/></li>
+            <li><FaYarn/></li>
+            <li><SiIntellijidea/></li>
           </ul>
           {contactIcons}
           {close}
@@ -120,7 +129,7 @@ class Main extends React.Component {
           <h2 className="major">Projects</h2>
           <span className="image main">
             <Link to="https://greenamonia.herokuapp.com/"><img src={pic04} alt="Website Screenshot" /></Link>
-            <FaGithub/> <FaReact/><FaHtml5/>
+            <FaGithub/> <FaReact/> <FaHtml5/> <SiGatsby/>
           </span>
           <h4>Personal Project</h4>
           <text>Portfolio</text>
@@ -136,7 +145,7 @@ class Main extends React.Component {
           </p>
           <span className="image main">
             <Link to="https://greenamonia.herokuapp.com/"><img src={pic02} alt="Website Screenshot" /></Link>
-            <FaGithub/> <FaReact/> <FaJava/> <FaDatabase/>
+            <FaGithub/> <FaReact/> <FaJava/> <FaDatabase/> <SiHeroku/> <FaYarn/>
           </span>
           <h4>Launch Academy Project</h4>
           <text>Review Site: "Greenamonia"</text>
@@ -151,7 +160,7 @@ class Main extends React.Component {
           </p>
           <span className="image main">
             <img src={pic03} alt="" />
-            <FaGithub/> <FaReact/> <FaDatabase/>
+            <FaGithub/> <FaReact/> <FaDatabase/> <FaYarn/>
           </span>
           <h4>Launch Academy Project</h4>
           <text>React Storefront</text>
@@ -200,12 +209,12 @@ class Main extends React.Component {
                 <br/>
                 <p>
                 •	Federally Registered Apprenticeship Program approved by the Department of Labor <br/>
-                •	Maintained prioritization of render jobs on the render farm (Deadline) and Maxscript jobs in the 3D application queue (OpenCue) <br/>
-                •	Troubleshot and monitored render farm and 3D application farm health <br/>
-                •	Created Grafana graphs for more accurate monitoring and reporting or render farm health status <br/>
-                •	Coordinated daily statistical updates of render farm data for stakeholder monitoring <br/>
-                •	Investigated an average of 50+ 3D scene files for errors daily <br/>
-                •	Scripted (Maxscript and Python3) code to automate daily tasks <br/>
+                {/* •	lorem <br/>
+                •	lorem <br/>
+                •	lorem <br/>
+                •	lorem <br/>
+                •	lorem <br/>
+                •	lorem <br/> */}
                 </p>
           <br/>
           <h4><Link to='https://bostonpic.org/'>The Boston Private Industry Council, Inc</Link></h4>
@@ -264,7 +273,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="#" data-netlify="true">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
